@@ -162,9 +162,9 @@ main p{
     line-height: 2em; /* espaçamento entre as linhas */
 }
 
-main strong{
-    /* da pra fazer todos os strong por aqui */
-}
+/*main strong{
+     da pra fazer todos os strong por aqui */
+
 
 main a::after{
 
