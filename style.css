@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "android";
+    src: url(fontes/idroid.otf)
+    format('opentype');
+    font-weight: normal ;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+  /*:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+
+--fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+--fonte-destaque:'Bebas Neue';
+--fonte-android: 'android';
+
+
+}*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    background-color: var(--cor0);
+   
+    
+}
+
+
+
+
+header {
+    
+    display: block;
+    background-image: linear-gradient(to bottom, #2fa866, #063d1e);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    
+    
+
+
+}
+
+header > h1 {
+font-family: "titulo";
+font-size: 3em;
+margin-bottom: 20px;
+font-family: 'Bebas Neue';
+
+}
+   
+header > p{
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.342);
+
+    
+}
+    
+    
+
+nav {
+    
+    background-color: #063d1e;
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.164);
+}
+nav > a {
+    color: #83e1ad;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .5s;
+
+
+}
+
+nav a:hover{
+    color:#063d1e;
+    
+    background-color:  #83e1ad;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px #141414ad ;
+   
+    padding: 20px;
+    display: block;
+    
+    
+
+}
+
+main  img{
+    width: 100%;
+}
+
+
+main img.pequena{
+
+    max-width: 350px; /* para deixar a imagem em uma resolução melhor */
+    display: block;
+    margin: auto;
+}
+
+
+main a{ 
+    background-color: #83e1ad;
+    color: #063d1e;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em; /* engrossa a fonte */
+    line-height: 2em; /* espaçamento entre as linhas */
+}
+
+main strong{
+    /* da pra fazer todos os strong por aqui */
+}
+
+main a::after{
+
+content: "☜";
+
+
+}
+
+main a:hover{
+
+    text-decoration: underline;
+
+
+}
+.titulos2{
+
+    background-color: rgb(86, 136, 86);
+    background-image: linear-gradient(to right ,#83e1ad , #effbf4);
+    color: #1a5c37;
+    font-weight: normal;
+    font-size: 20px;
+
+    font-family: android;
+
+
+}
+
+aside {
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    background-color:#83e1ad ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 28%); /*sombra*/
+}
+
+aside > h2{
+
+    background-color:#1a5c37 ;
+    color: white
+
+}
+
+aside > h3{
+    background-color: #1a5c37 ;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0'; /* 00A0 espaçamento do símbolo de lista com o que esta escrito */
+    list-style-position: inside; /* bolinha pro lado de dentro */
+    columns: 2; 
+}
+
+
+
+div.video{
+    background-color:#1a5c37 ;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5% ;
+    left: 5%;
+    width: 90% ;
+    height: 90% ;
+}
+
+footer{
+    background-color: #1a5c37;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #83e1ad;
+}
+
+
+    /* símobolo da correntinha content: '\00A0\1F517';
+    vai no index e coloca no link class= 'externo'*/
